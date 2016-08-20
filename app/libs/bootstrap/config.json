@@ -1,0 +1,11 @@
+{
+  "vars": {
+    "@grid-gutter-width": "20",
+    "@container-large-desktop": "940 + @grid-gutter-width"
+  },
+  "css": [
+    "grid.less"
+  ],
+  "js": [],
+  "customizerUrl": "http://getbootstrap.com/customize/?id=45a1db521237d92c504a41fc3be1a7e2"
+}
