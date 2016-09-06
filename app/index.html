@@ -5,22 +5,27 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>test</title>
-  
   <link rel="stylesheet" href="css/styles.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.5/jquery.fullPage.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.5/jquery.fullPage.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#fullpage').fullpage({
+        anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage']
+      });
+    });
+  </script>
+  
 </head>
 <body>
-  <div class="slider-inputs">
-    <input type="radio" name="controls" id="btn-1" checked>
-    <input type="radio" name="controls" id="btn-2">
-    <input type="radio" name="controls" id="btn-3">
-    <input type="radio" name="controls" id="btn-4">
-  </div>
-  <section class="slide-1">
+  <div id="fullpage">
+  <section class="slide-1 section" id="section0">
     <div class="slider-pagination">
-      <label for="btn-1">o</label>
-      <label for="btn-2">o</label>
-      <label for="btn-3">o</label>
-      <label for="btn-4">o</label>
+      <a href="#firstPage">11</a>
+      <a href="#secondPage">22</a>
+      <a href="#thirdPage">33</a>
+      <a href="#fourthPage">44</a>
     </div>
     <div class="header">
       <div class="container">
@@ -58,12 +63,12 @@
 
   </section>
 
-  <section class="slide-2">
+  <section class="slide-2 section" id="section1">
     <div class="slider-pagination">
-      <label for="btn-1">o</label>
-      <label for="btn-2">o</label>
-      <label for="btn-3">o</label>
-      <label for="btn-4">o</label>
+      <a href="#firstPage">11</a>
+      <a href="#secondPage">22</a>
+      <a href="#thirdPage">33</a>
+      <a href="#fourthPage">44</a>
     </div>
     <div class="container">
       <div class="row">
@@ -73,10 +78,10 @@
           </div>
         </div>
 
-        <div class="col-md-7">
+        <div class="col-md-7 hidden-sm">
           <div class="s2-content clearfix">
             <h1 class="s2-content__heading">Начните инвестировать</h1>
-            <p class="s2-content__text">Думаете о сохранении и приумножении своих денежных средств? Сбережение не поможет. Станьте инвестором. Мы предлагаем современный способ вложения денег, который давно стал заменой депозита для европейских и американских частных инвесторов даже при наличии  небольшого капитала.  Биржевые инвестиционные фонды ETF - это прозрачность, доступность и надежность, гарантированная российским и европейским регуляторами.  Минимальный порог входа позволит Вам начать комфортную работу с инструментом уже сегодня.  </p>
+            <p class="s2-content__text">Думаете о сохранении и приумножении своих денежных средств? Сбережение не поможет. Станьте инвестором. Мы предлагаем современный способ вложения денег, который давно стал заменой депозита для европейских и американских частных инвесторов даже при наличии небольшого капитала. Биржевые инвестиционные фонды ETF - это прозрачность, доступность и надежность, гарантированная российским и европейским регуляторами.  Минимальный порог входа позволит Вам начать комфортную работу с инструментом уже сегодня.  </p>
             <h2>Попробуйте сформировать свой инвестиционный портфель </h2>
             <a href="#" class="btn">Начать инвестировать</a>
             <div class="numbers">
@@ -102,25 +107,27 @@
     </div>
   </section>
 
-  <section class="slide-3">
+  <section class="slide-3 section" id="section2">
     <div class="slider-pagination">
-      <label for="btn-1">o</label>
-      <label for="btn-2">o</label>
-      <label for="btn-3">o</label>
-      <label for="btn-4">o</label>
+      <a href="#firstPage">11</a>
+      <a href="#secondPage">22</a>
+      <a href="#thirdPage">33</a>
+      <a href="#fourthPage">44</a>
     </div>
     <div class="container">
       <div class="row">
+      
       <div class="calculate">
-        <h1 class="calculate__heading">Минимальная коммисия</h1>
-        <p class="calculate__text">Инвестируя в международные фонды, вы покупаете готовые инвестиционные портфели, основанные на разнообразных стратегиях, каждая из которых предполагает различную потенциальную доходность.</p>
+        
+          <h1 class="calculate__heading">Минимальная коммисия</h1>
+          <p class="calculate__text">Инвестируя в международные фонды, вы покупаете готовые инвестиционные портфели, основанные на разнообразных стратегиях, каждая из которых предполагает различную потенциальную доходность.</p>
         
           <span class="calculate__investment">Вложения</span>
           <input class="calculate__value" type="text">
           <input class="calculate__range" type="range">
           <a href="#" class="btn">Рассчитать инвестиции</a>
-
-        </div>
+      </div>
+      
 
         <div class="s3-content">
           <div class="col-md-5">
@@ -141,12 +148,12 @@
     </div>
   </section>
 
-  <section class="slide-4">
+  <section class="slide-4 section" id="section3">
     <div class="slider-pagination">
-      <label for="btn-1">o</label>
-      <label for="btn-2">o</label>
-      <label for="btn-3">o</label>
-      <label for="btn-4">o</label>
+      <a href="#firstPage">11</a>
+      <a href="#secondPage">22</a>
+      <a href="#thirdPage">33</a>
+      <a href="#fourthPage">44</a>
     </div>
     <div class="container">
       <div class="row">
@@ -157,7 +164,7 @@
 
           <div class="col-md-4">
             <a href="#" class="advantages__item">
-              <img src="img/icons/card-wallet.svg" alt="car-wallet">
+              <img src="img/icons/bag-dollar.svg" alt="">
               <h3>Инвестиция в зарубежные рынки и товары</h3>
             </a>
             
@@ -165,65 +172,68 @@
 
           <div class="col-md-4">
             <a href="#" class="advantages__item advantages__item--purple">
-              <img src="img/icons/card-wallet.svg" alt="car-wallet">
-              <h3>Инвестиция в зарубежные рынки и товары</h3>
+              <img src="img/icons/card-wallet.svg" alt="">
+              <h3>Ликвидные документы</h3>
             </a>
             
           </div>
 
           <div class="col-md-4">
             <a href="#" class="advantages__item advantages__item--crimson">
-              <img src="img/icons/card-wallet.svg" alt="car-wallet">
-              <h3>Инвестиция в зарубежные рынки и товары</h3>
+              <img src="img/icons/old-fashion-briefcase.svg" alt="">
+              <h3>Прозрачный инвестиционный портфель</h3>
             </a>
             
           </div>
 
           <div class="col-md-4">
             <a href="#" class="advantages__item">
-              <img src="img/icons/card-wallet.svg" alt="car-wallet">
-              <h3>Инвестиция в зарубежные рынки и товары</h3>
+              <img src="img/icons/warranty.png" alt="">
+              <h3>Гарантии европейского регулятора</h3>
             </a>
             
           </div>
 
           <div class="col-md-4">
             <a href="#" class="advantages__item advantages__item--purple">
-              <img src="img/icons/card-wallet.svg" alt="car-wallet">
-              <h3>Инвестиция в зарубежные рынки и товары</h3>
+              <img src="img/icons/coins-on-hand.svg" alt="">
+              <h3>Минимальные инвестиции диверсифицированный</h3>
             </a>
             
           </div>
 
           <div class="col-md-4">
             <a href="#" class="advantages__item advantages__item--crimson">
-              <img src="img/icons/card-wallet.svg" alt="car-wallet">
-              <h3>Инвестиция в зарубежные рынки и товары</h3>
+              <img src="img/icons/moscow-stock.png" alt="">
+              <h3>Покупка напрямую на Московской Бирже</h3>
             </a>
             
           </div>
 
 
-
-          <a href="#" class="btn">Начать инвестировать</a>
+          <div class="col-md-12">
+            <a href="#" class="btn">Начать инвестировать</a>
+          </div>
         </div>
       </div>
     </div>
-        <footer class="main-footer clearfix">
-          <div class="container">
-            <div class="main-footer__copyright">
-              <p>&copy; 2015 Finex-ETF </p>
-            </div>
+    <footer class="main-footer clearfix">
+      <div class="container">
+        <div class="main-footer__copyright">
+          <p>&copy; 2015 Finex-ETF </p>
+        </div>
 
-            <div class="main-footer__made-by">
-              <p>Разработка: Интернет-агентство <a href="#">Future</a></p>
-            </div>
-          </div>
-        </footer>
+        <div class="main-footer__made-by">
+          <p>Разработка: Интернет-агентство <a href="#">Future</a></p>
+        </div>
+      </div>
+    </footer>
      
   </section>
+  </div>
 
 
 
 </body>
+
 </html>
